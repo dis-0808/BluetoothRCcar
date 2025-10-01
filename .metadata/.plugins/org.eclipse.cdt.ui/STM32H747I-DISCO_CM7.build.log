@@ -1,0 +1,16 @@
+17:43:31 **** Incremental Build of configuration Debug for project STM32H747I-DISCO_CM7 ****
+make all 
+arm-none-eabi-gcc "D:/User/Desktop/BluetoothRCcar/H747/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DUSE_BPP=24 -DSTM32H747xx -c -I../../../CM7/Core/Inc -I../../../CM7/TouchGFX/App -I../../../CM7/TouchGFX/target/generated -I../../../CM7/TouchGFX/target -I../../../Drivers/BSP/Components/Common -I../../../Drivers/BSP/STM32H747I-Discovery -I../../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../../Middlewares/Third_Party/FreeRTOS/Source/include -I../../../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../../../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -I../../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../../Drivers/CMSIS/Include -I../../../Drivers/BSP/Components -I../../CM7/../../CM7/Middlewares/ST/touchgfx/framework/include -I../../CM7/../../CM7/TouchGFX/generated/fonts/include -I../../CM7/../../CM7/TouchGFX/generated/gui_generated/include -I../../CM7/../../CM7/TouchGFX/generated/images/include -I../../CM7/../../CM7/TouchGFX/generated/texts/include -I../../CM7/../../CM7/TouchGFX/generated/videos/include -I../../CM7/../../CM7/TouchGFX/gui/include -Os -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Middlewares/FreeRTOS/cmsis_os2.d" -MT"Middlewares/FreeRTOS/cmsis_os2.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Middlewares/FreeRTOS/cmsis_os2.o"
+In file included from ../../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
+                 from ../../../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h:282,
+                 from D:/User/Desktop/BluetoothRCcar/H747/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/freertos_os2.h:31,
+                 from D:/User/Desktop/BluetoothRCcar/H747/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c:34:
+../../../CM7/Core/Inc/stm32h7xx_hal_conf.h:464:11: fatal error: stm32h7xx_hal_uart.h: No such file or directory
+  464 |  #include "stm32h7xx_hal_uart.h"
+      |           ^~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+make: *** [Middlewares/FreeRTOS/subdir.mk:46: Middlewares/FreeRTOS/cmsis_os2.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+
+17:43:32 Build Failed. 2 errors, 0 warnings. (took 719ms)
+
